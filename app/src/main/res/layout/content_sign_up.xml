@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f56a55"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="hack_a_thon.otbc.brew.SignUpAct"
+    tools:showIn="@layout/activity_sign_up">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="390dip"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/signupact_signupbutton"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/coffee_break1" />
+
+    <Button
+        android:id="@+id/signupact_signupbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/signupact_passconf"
+        android:layout_alignLeft="@+id/signupact_passconf"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/signupact_passconf"
+        android:layout_alignStart="@+id/signupact_passconf"
+        android:layout_marginBottom="70dip"
+        android:background="#C896590E"
+        android:text="Sign Me Up"
+        android:textColor="#dadbbc"
+        android:textSize="35sp" />
+
+    <EditText
+        android:id="@+id/signupact_passconf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signupact_signupbutton"
+        android:layout_centerHorizontal="true"
+        android:ems="14"
+        android:hint="Confirm PassPhrase"
+        android:inputType="textPassword"
+        android:textColor="#dadbbc" />
+
+    <EditText
+        android:id="@+id/signupact_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signupact_passconf"
+        android:layout_centerHorizontal="true"
+        android:ems="14"
+        android:hint="PassPhrase goes here"
+        android:inputType="textPassword"
+        android:textColor="#dadbbc" />
+
+    <EditText
+        android:id="@+id/signup_uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signupact_pass"
+        android:layout_alignEnd="@+id/signupact_pass"
+        android:layout_alignLeft="@+id/signupact_pass"
+        android:layout_alignRight="@+id/signupact_pass"
+        android:layout_alignStart="@+id/signupact_pass"
+        android:layout_centerVertical="true"
+        android:hint="Username goes here.."
+        android:textColor="#dadbbc" />
+</RelativeLayout>

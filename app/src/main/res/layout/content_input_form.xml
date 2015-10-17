@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="hack_a_thon.otbc.brew.InputForm"
+    tools:showIn="@layout/activity_input_form"
+    android:background="@drawable/img2">
+
+
+    <TextView
+        android:id="@+id/form_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="Wanna brew something?"
+        android:textSize="30sp"
+        android:elevation="10dip"
+        android:background="#eb420f0c"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/form_input_post"
+        android:layout_width="fill_parent"
+        android:layout_height="560dip"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:ems="20"
+        android:hint="Brew Here!"
+        android:elevation="8dip"
+        android:textSize="30sp"
+        android:background="#4cf94a4a"
+        android:layout_below="@+id/form_msg" />
+</RelativeLayout>

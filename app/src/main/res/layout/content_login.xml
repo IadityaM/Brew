@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dadbbc"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="hack_a_thon.otbc.brew.Login"
+    tools:showIn="@layout/activity_login">
+
+
+    <EditText
+        android:id="@+id/login_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_loginbutton"
+        android:layout_centerHorizontal="true"
+        android:ems="14"
+        android:hint="PassPhrase"
+        android:inputType="numberPassword"
+        android:elevation="4dip"
+        android:textColor="#01c80b"
+        android:textColorHint="#e8e8e8" />
+
+    <Button
+        android:id="@+id/login_loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/login_pass"
+        android:layout_alignLeft="@+id/login_pass"
+        android:layout_alignRight="@+id/login_pass"
+        android:layout_alignStart="@+id/login_pass"
+        android:layout_centerVertical="true"
+        android:background="#C896590E"
+        android:text="Login"
+        android:textColor="#dadbbc"
+        android:textSize="35sp" />
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_pass"
+        android:layout_centerHorizontal="true"
+        android:ems="14"
+        android:hint="Email_Id"
+        android:inputType="textEmailAddress"
+        android:elevation="4dip"
+        android:textColorHint="#e8e8e8"
+        android:textColor="#01c80b" />
+
+    <Button
+        android:id="@+id/login_signupbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/login_loginbutton"
+        android:layout_alignLeft="@+id/login_loginbutton"
+        android:layout_alignRight="@+id/login_loginbutton"
+        android:layout_alignStart="@+id/login_loginbutton"
+        android:layout_below="@+id/textView2"
+        android:background="#dc653916"
+        android:text="SignUp Now!"
+        android:textColor="#dadbbc"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_loginbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dip"
+        android:text="Don&apos;t Have an account yet?"
+        android:textSize="25sp"
+        android:textColor="#9bff65"
+        android:elevation="2dip" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/icecof"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>
